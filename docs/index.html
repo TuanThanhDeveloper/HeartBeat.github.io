@@ -2,7 +2,7 @@
 <HTML>
 
 <HEAD>
-    <TITLE>I Love You</TITLE>
+    <TITLE>From Tuấn Thành with love</TITLE>
     <META NAME="Generator" CONTENT="EditPlus">
     <META NAME="Author" CONTENT="">
     <META NAME="Keywords" CONTENT="">
@@ -23,8 +23,6 @@
         }
         
         canvas {
-            /* top: 50%;
-            left: 50%; */
             z-index: 1;
             display: block;
             position: absolute;
@@ -39,9 +37,6 @@
             30% {
                 transform: scale(.8);
             }
-            /* 60% {
-                transform: scale(1.2);
-            } */
             100% {
                 transform: scale(1);
             }
@@ -56,17 +51,9 @@
         </canvas>
     </canvas>
     <script>
-        /*
-         * Settings
-         */
+
         var settings = {
-            // particles: {
-            //     length: 1500, // maximum amount of particles
-            //     duration: 2, // particle duration in sec
-            //     velocity: 135, // particle velocity in pixels/sec
-            //     effect: -0.35, // play with this for a nice effect
-            //     size: 30, // particle size in pixels
-            // },
+
             particles: {
                 length: 500,
                 duration: 2,
@@ -75,10 +62,6 @@
                 size: 30,
             },
         };
-
-        /*
-         * RequestAnimationFrame polyfill by Erik Möller
-         */
         (function() {
             var b = 0;
             var c = ["ms", "moz", "webkit", "o"];
@@ -103,10 +86,6 @@
                 }
             }
         }());
-
-        /*
-         * Point class
-         */
         var Point = (function() {
             function Point(x, y) {
                 this.x = (typeof x !== 'undefined') ? x : 0;
@@ -131,10 +110,6 @@
             };
             return Point;
         })();
-
-        /*
-         * Particle class
-         */
         var Particle = (function() {
             function Particle() {
                 this.position = new Point();
@@ -169,9 +144,6 @@
             return Particle;
         })();
 
-        /*
-         * ParticlePool class
-         */
         var ParticlePool = (function() {
             var particles,
                 firstActive = 0,
